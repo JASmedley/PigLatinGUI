@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PigLatin GUI</title>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  
+  <h1>PigLatin GUI</h1>
+  <hr/> 
+
+  <form id="pig-latin-form" autocomplete="off" target="_blank">
+    <div> 
+      <label for="word">word</label> 
+      <input type="text" name="word" id="word"  placeholder="what's your word?" onkeyup="updateWord(this)"> 
+    </div>
+    <div>
+      <input type="button" value="Confuscate it!" onclick="confuscateIt()">
+    </div>
+  </form>
+  
+  <section>
+    <h2>Word List</h2>
+    <ul id="list"></ul>
+  </section>
+
+</body>
+</html>
